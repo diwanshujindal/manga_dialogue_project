@@ -1,0 +1,58 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run: extract+clean (opencv)",
+      "type": "python",
+      "request": "launch",
+      "module": "src.main",
+      "console": "integratedTerminal",
+      "args": [
+        "--image",
+        "data/samples/page.jpg",
+        "--mode",
+        "both",
+        "--method",
+        "opencv",
+        "--lang",
+        "eng",
+        "--outdir",
+        "outputs"
+      ]
+    },
+    {
+      "name": "Run: extract only",
+      "type": "python",
+      "request": "launch",
+      "module": "src.main",
+      "console": "integratedTerminal",
+      "args": [
+        "--image",
+        "data/samples/page.jpg",
+        "--mode",
+        "extract",
+        "--lang",
+        "eng",
+        "--outdir",
+        "outputs"
+      ]
+    },
+    {
+      "name": "Run: clean only (opencv)",
+      "type": "python",
+      "request": "launch",
+      "module": "src.main",
+      "console": "integratedTerminal",
+      "args": [
+        "--image",
+        "data/samples/page.jpg",
+        "--mode",
+        "clean",
+        "--method",
+        "opencv",
+        "--outdir",
+        "outputs"
+      ]
+    }
+  ]
+}
